@@ -1,0 +1,63 @@
+.coverCompanies {
+  display: grid;
+  gap: 15px;
+}
+.coverPaggBar {
+  display: grid;
+  grid-template-columns: repeat(7, auto);
+  gap: 10px;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.coverPaggBar > span {
+  background-color: #f7f7f7;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+
+  padding: 10px;
+  height: 30px;
+  width: 30px;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 10px;
+  cursor: pointer;
+}
+.coverPaggBar > span:hover {
+  transform: scale(1.05);
+}
+.coverOneCompany {
+  background-color: #f7f7f7;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  border-radius: 8px;
+  display: grid;
+  gap: 5px;
+}
+.arrowLeft {
+  content: "";
+  cursor: pointer;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+
+  border-right: 10px solid black;
+}
+.arrowRight {
+  content: "";
+  cursor: pointer;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+
+  border-left: 10px solid black;
+}
+.arrowLeft:disabled {
+  cursor: not-allowed;
+  border-right: 10px solid rgb(154, 154, 154);
+}
+.arrowRight:disabled {
+  cursor: not-allowed;
+  border-left: 10px solid rgb(154, 154, 154);
+}
